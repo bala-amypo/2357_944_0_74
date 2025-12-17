@@ -29,10 +29,15 @@ public class NewfileServiceImpl implements NewfileService{
     }
     @Override
     public NewfileEntity update(Long id, NewfileEntity newfile) {
-        NewfileEntity ex=getidval
+        NewfileEntity ex=getidval(id);
+        ex.setName(newfile.getName());
+        ex.setEmail(newfile.getEmail());
+        return rep.save(ex);
 
     } 
 
     @Override
     public void delete(Long id) {
+        rep.delete(id);
+    }
 }
