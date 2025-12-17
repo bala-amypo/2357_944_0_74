@@ -3,9 +3,9 @@ package com.example.demo.entity;
 import java.time.LocalDate;
 
 public class StudentEntity {
-    @
+    @Column(name=unique)
     private String name;
-    @id
+    @Id
     private int id;
     private LocalDate date;
     private float cgpa;
