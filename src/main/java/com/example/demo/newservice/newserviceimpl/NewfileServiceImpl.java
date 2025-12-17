@@ -29,6 +29,7 @@ public class NewfileServiceImpl implements NewfileService{
     }
     @Override
     public NewfileEntity update(Long id, NewfileEntity newfile) {
+        NewfileEntity ex=getidval
 
     } 
 
