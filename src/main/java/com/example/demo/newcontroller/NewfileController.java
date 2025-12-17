@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.StudentEntity;
-import com.example.demo.service.Studentservice;
+import com.example.demo.entity.NewFileEntity;
+import com.example.demo.service.service;
 
 @RestController
 public class NewfileController {
