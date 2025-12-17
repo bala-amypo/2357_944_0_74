@@ -7,20 +7,24 @@ import com.example.demo.newservice.NewfileService;
 public class NewfileServiceImpl implements NewfileService{
    
     private final NewfileRepo rep;
-    private NewfileServiceImpl(){
-        
+    private NewfileServiceImpl(NewfileRepo rep){
+        this.rep=rep;
+
     }
     @Override
     public NewfileEntity savedata(NewfileEntity newfile){
+        return rep.save(newfile);
  
     }
 
     @Override
     public NewfileEntity getidval(Long id) {
+        return rep.findbyId(id);
 
     }
     @Override
     public List<NewfileEntity> getall() {
+        return rep.findAll();
 
     }
     @Override
