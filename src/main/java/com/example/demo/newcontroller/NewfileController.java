@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.newcontroller;
 
 import java.util.List;
 
@@ -15,9 +15,9 @@ import com.example.demo.entity.StudentEntity;
 import com.example.demo.service.Studentservice;
 
 @RestController
-public class StudentController {
+public class NewfileController {
     @Autowired
-    Studentservice src;
+    NewfileEntity src;
     @PostMapping("/post")
     public StudentEntity postdata(@RequestBody StudentEntity st){
         return src.savedata(st);
