@@ -7,7 +7,7 @@ import jakarta. validation. constraints. Email;
 @Entity
 
 public class NewfileEntity{
-    @Id
+    
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     @NotBlank(message="Should not contain spaces")
